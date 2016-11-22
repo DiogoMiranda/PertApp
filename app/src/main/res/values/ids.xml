@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtTexto" type="id" />
+    <item name="Cdisplay" type="id" />
+    <item name="graph" type="id" />
+    <item name="valor3view" type="id" />
+    <item name="valor1view" type="id" />
+    <item name="valor2view" type="id" />
+    <item name="Ddisplay3" type="id" />
+    <item name="container" type="id" />
+</resources>

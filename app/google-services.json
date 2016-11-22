@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20389014902",
+    "firebase_url": "https://pert-9ac2b.firebaseio.com",
+    "project_id": "pert-9ac2b",
+    "storage_bucket": "pert-9ac2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20389014902:android:aa1ea8d6d6c77233",
+        "android_client_info": {
+          "package_name": "diogo.miranda.pert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20389014902-h583bklr8uqbhc15v1j86rdcemqb0v83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "diogo.miranda.pert",
+            "certificate_hash": "5EF2FB34D71C3D9632D056DF85CEF44B8888371F"
+          }
+        },
+        {
+          "client_id": "20389014902-cn3lj7qapg82kagj1l2q6sdb2ct42v4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6D8l_BB6cNGSL2GhLWM5yWCneJTYOvQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20389014902-cn3lj7qapg82kagj1l2q6sdb2ct42v4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
