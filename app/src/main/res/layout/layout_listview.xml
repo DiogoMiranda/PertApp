@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
->
+    android:orientation="horizontal">
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="80dp"
+    <TextView
+        android:id="@+id/list_item_post_id_textview"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:minHeight="?android:attr/listPreferredItemHeight"
-        android:gravity="left"
-        android:id="@+id/list_item_post_id_textview"/>
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        tools:text="1" />
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        android:id="@+id/list_item_post_title_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:minHeight="?android:attr/listPreferredItemHeight"
         android:gravity="center_vertical"
-        android:id="@+id/list_item_post_title_textview"/>
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        tools:text="item da lista" />
 
 
-    </LinearLayout>
+</LinearLayout>

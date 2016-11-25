@@ -1,7 +1,6 @@
 package diogo.miranda.pert.View.Activity;
 
 import android.content.Intent;
-import android.support.annotation.UiThread;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import diogo.miranda.pert.Adapter.AdapterAtividade;
 import diogo.miranda.pert.DAO.DBHelper;
 import diogo.miranda.pert.Model.Atividade;
@@ -115,19 +114,19 @@ public class MainActivity extends AppCompatActivity {
         Log.i("", "onActivityResult. Request" + requestCode + " - Result" + resultCode);
         if(requestCode == REQUEST_DISPLAY){
             if(resultCode == RESULT_ADD_OK){
-                Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Adicionada", Snackbar.LENGTH_SHORT);
+                Snackbar snackbar = Snackbar.make(findViewById(R.id.main_linearlayout_base), "Atividade Adicionada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
 
             }
 
             if(resultCode == RESULT_DEL_OK){
-                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Deletada", Snackbar.LENGTH_SHORT);
+                 Snackbar snackbar = Snackbar.make(findViewById(R.id.main_linearlayout_base), "Atividade Deletada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
 
             }
 
             if(resultCode == RESULT_EDT_OK){
-                Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Editada", Snackbar.LENGTH_SHORT);
+                Snackbar snackbar = Snackbar.make(findViewById(R.id.main_linearlayout_base), "Atividade Editada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
             }
         }
@@ -160,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         AdapterAtividade adapterAtividade = new AdapterAtividade(this, arrayAtividade);
 
         // O List view que esta no Activity_Main.XML
-        objListView = (ListView)findViewById(R.id.listView1);
+        objListView = (ListView)findViewById(R.id.main_listview);
         objListView.setAdapter(adapterAtividade);
     }
 
