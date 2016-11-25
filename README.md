@@ -1,6 +1,6 @@
 # PertApp
 
-PertApp, um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT
+#PertApp, um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT
 
 A técnica PERT tem por objetivo descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP). 
        Otimista = É o cenário perfeito, onde tudo dá certo.
