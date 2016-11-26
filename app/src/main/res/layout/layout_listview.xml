@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
->
+    android:orientation="horizontal">
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_item_post_id_textview"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:minHeight="?android:attr/listPreferredItemHeight"
         android:gravity="left"
-        android:id="@+id/list_item_post_id_textview"/>
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp" />
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_item_post_title_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:minHeight="?android:attr/listPreferredItemHeight"
         android:gravity="center_vertical"
-        android:id="@+id/list_item_post_title_textview"/>
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp" />
 
 
-    </LinearLayout>
+</LinearLayout>

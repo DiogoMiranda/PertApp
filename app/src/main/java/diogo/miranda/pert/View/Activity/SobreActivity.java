@@ -17,8 +17,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
-
 public class SobreActivity extends AppCompatActivity {
 
     FragmentTransaction ft;
@@ -29,10 +27,6 @@ public class SobreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sobre);
 
-
-
-
-
         //------------------------------------------------------------------
 
         // Criando uma array falsa de strings com os títulos das nossas Aulas
@@ -40,7 +34,7 @@ public class SobreActivity extends AppCompatActivity {
                 "Contato",
                 "Técnica Pert",
                 "Agradecimentos",
-                "              Versão 1.0"
+                "              Versão 1.11"
         };
 
 
@@ -100,10 +94,7 @@ public class SobreActivity extends AppCompatActivity {
             }
         });
 
-
     }
-
-
 }
 
 

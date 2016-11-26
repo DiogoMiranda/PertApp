@@ -1,6 +1,7 @@
 package diogo.miranda.pert.View.Activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.UiThread;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
@@ -11,8 +12,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import diogo.miranda.pert.Adapter.AdapterAtividade;
 import diogo.miranda.pert.DAO.DBHelper;
 import diogo.miranda.pert.Model.Atividade;
@@ -21,20 +29,25 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE="MESSAGE";
+    public final static String EXTRA_MESSAGE = "MESSAGE";
     public static final int REQUEST_DISPLAY = 25;
     public static final int RESULT_ADD_OK = 26;
     public static final int RESULT_DEL_OK = 27;
     public static final int RESULT_EDT_OK = 28;
     private ListView objListView;
     DBHelper db;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        db=new DBHelper(this);
+        db = new DBHelper(this);
         updateListView();
         objListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -50,13 +63,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_DISPLAY);
             }
         });
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     //--------------------------------------------------------------------------------------------------
-    public void irCalculoPert (View view){
-            Intent intent = new Intent(getApplicationContext(), EstimativaActivity.class);
-            startActivity(intent);
+    public void irCalculoPert(View view) {
+        Intent intent = new Intent(getApplicationContext(), EstimativaActivity.class);
+        startActivity(intent);
 
+    }
+
+    public  void  irCompartilhamento (View v){
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
     }
 
     //--------------------------------------------------------------------------------------------------
@@ -66,9 +91,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
 
-
     }
-
 
 
     //--------------------------------------------------------------------------------------------------
@@ -76,25 +99,24 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
 
-        switch(item.getItemId())
-        {
-            case R.id.item1:Bundle dataBundle = new Bundle();
+        switch (item.getItemId()) {
+            case R.id.item1:
+                Bundle dataBundle = new Bundle();
                 dataBundle.putInt("id", 0);
 
                 Log.i("", "Cliquei no menu Add");
-                Intent intent = new Intent(getBaseContext(),DisplayAtividade.class);
+                Intent intent = new Intent(getBaseContext(), DisplayAtividade.class);
                 intent.putExtras(dataBundle);
 
                 startActivityForResult(intent, REQUEST_DISPLAY);
                 return true;
 
 
-
             case R.id.item2:
                 dataBundle = new Bundle();
                 dataBundle.putInt("id", 2);
 
-                Intent intent2 = new Intent(getBaseContext(),SobreActivity.class);
+                Intent intent2 = new Intent(getBaseContext(), SobreActivity.class);
                 intent2.putExtras(dataBundle);
 
                 startActivityForResult(intent2, 2);
@@ -113,20 +135,20 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         Log.i("", "onActivityResult. Request" + requestCode + " - Result" + resultCode);
-        if(requestCode == REQUEST_DISPLAY){
-            if(resultCode == RESULT_ADD_OK){
+        if (requestCode == REQUEST_DISPLAY) {
+            if (resultCode == RESULT_ADD_OK) {
                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Adicionada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
 
             }
 
-            if(resultCode == RESULT_DEL_OK){
-                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Deletada", Snackbar.LENGTH_SHORT);
+            if (resultCode == RESULT_DEL_OK) {
+                Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Deletada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
 
             }
 
-            if(resultCode == RESULT_EDT_OK){
+            if (resultCode == RESULT_EDT_OK) {
                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Editada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
             }
@@ -155,13 +177,48 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void updateListView(){
-        ArrayList<Atividade> arrayAtividade  = db.getAllStudentContacts();
+    private void updateListView() {
+        ArrayList<Atividade> arrayAtividade = db.getAllStudentContacts();
         AdapterAtividade adapterAtividade = new AdapterAtividade(this, arrayAtividade);
 
         // O List view que esta no Activity_Main.XML
-        objListView = (ListView)findViewById(R.id.listView1);
+        objListView = (ListView) findViewById(R.id.listView1);
         objListView.setAdapter(adapterAtividade);
     }
 
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    public Action getIndexApiAction() {
+        Thing object = new Thing.Builder()
+                .setName("Main Page") // TODO: Define a title for the content shown.
+                // TODO: Make sure this auto-generated URL is correct.
+                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                .build();
+        return new Action.Builder(Action.TYPE_VIEW)
+                .setObject(object)
+                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                .build();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        AppIndex.AppIndexApi.start(client, getIndexApiAction());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.end(client, getIndexApiAction());
+        client.disconnect();
+    }
 }

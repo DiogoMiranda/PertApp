@@ -5,9 +5,6 @@ import java.io.Serializable;
 
 
 public class CalculoPert implements Serializable{
-
-
-
     private Long otimista;
     private Long provavel;
     private Long pessimista;
@@ -26,7 +23,6 @@ public class CalculoPert implements Serializable{
         this.pessimista = pessimista;
 
     }
-
 
     public Long getOtimista() {
         return otimista;
@@ -90,8 +86,6 @@ public class CalculoPert implements Serializable{
     public void setVariacia(double variacia) {
         this.variacia = variacia;
     }
-
-
 
     public boolean calcula() throws Exception{
         if (otimista == null || provavel == null || pessimista == null) {

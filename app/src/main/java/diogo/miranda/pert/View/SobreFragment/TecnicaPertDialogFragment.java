@@ -31,7 +31,7 @@ public class TecnicaPertDialogFragment extends DialogFragment {
         ImageView imgTecnicaPert = (ImageView) view.findViewById(R.id.imgTecnicaFormulaPert);
 
 
-        dvTecnicaTexto1.setText("A técnica PERT busca descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP). .\n" +
+        dvTecnicaTexto1.setText("A técnica PERT tem por objetivo descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP). .\n" +
                 ". Otimista = É o cenário perfeito, onde tudo dá certo.\n" +
                 ". Pessimista = É o pior cenário, onde tudo vai dar errado.\n" +
                 ". Mais Provável = É um cenário razoável, onde tudo ficará dentro da normalidade, sem grandes surpresas (nem boas nem ruins).\n\n" +

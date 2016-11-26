@@ -10,49 +10,48 @@
         android:layout_height="340dp"
         android:layout_gravity="center"></ListView>
 
-
     <ImageView
 
         android:id="@+id/imageView"
-        android:contentDescription="1"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:contextClickable="false"
-        android:layout_alignParentTop="false"
-        android:layout_alignWithParentIfMissing="false"
-        android:adjustViewBounds="false"
-        android:baselineAlignBottom="false"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
         android:layout_gravity="left|top"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:contentDescription="1"
+        android:contextClickable="false"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Diogo Francisco Miranda"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
         android:layout_gravity="right|top"
-        android:layout_marginTop="50dp"
+        android:layout_margin="60dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="80dp"
-        android:layout_margin="60dp" />
+        android:layout_marginTop="50dp"
+        android:text="Diogo Francisco Miranda"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="PertApp"
-        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="right|top"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:text="PertApp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </FrameLayout>

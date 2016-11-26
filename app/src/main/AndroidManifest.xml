@@ -11,9 +11,7 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"
-
             />
-
 
         <activity
             android:name=".View.Activity.MainActivity"
@@ -36,8 +34,6 @@
             android:parentActivityName=".View.Activity.MainActivity" />
 
 
-
-
         <activity
             android:name=".View.Activity.SobreActivity"
             android:configChanges="orientation"
@@ -46,9 +42,6 @@
             android:screenOrientation="portrait">
 
         </activity>
-
-
-
 
     </application>
 

@@ -44,7 +44,6 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculo_pert);
-        //ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Log.i("", "EstimativaActivity");
@@ -87,8 +86,6 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public void onClick(View v) {
 
-
-
         // Recortado para CalculoPert
 
         String v1 = edtvalor1.getText().toString();
@@ -115,11 +112,13 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
             dialogResult.show(ft, "dialogResult");
 
 
-
  }
 
-
     }
+
+
+
+
 
 
     @Override

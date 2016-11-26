@@ -23,7 +23,6 @@ import java.util.HashMap;
 
 public class ResultCalcDialog extends DialogFragment {
 
-
     public static ResultCalcDialog newInstance(HashMap<String, Long> estimativa) {
         ResultCalcDialog f = new ResultCalcDialog();
 
@@ -65,10 +64,6 @@ public class ResultCalcDialog extends DialogFragment {
                     }
                 });
 
-
         return alert.show();
     }
-
-
-
 }
