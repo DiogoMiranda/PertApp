@@ -2,6 +2,7 @@ package diogo.miranda.pert.View.Activity;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Environment;
 import android.support.annotation.UiThread;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
@@ -25,6 +26,8 @@ import diogo.miranda.pert.Adapter.AdapterAtividade;
 import diogo.miranda.pert.DAO.DBHelper;
 import diogo.miranda.pert.Model.Atividade;
 import diogo.miranda.pert.R;
+
+import java.io.File;
 import java.util.ArrayList;
 
 
@@ -36,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int RESULT_EDT_OK = 28;
     private ListView objListView;
     DBHelper db;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+
     private GoogleApiClient client;
 
     @Override
@@ -63,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_DISPLAY);
             }
         });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
@@ -74,16 +73,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public  void  irCompartilhamento (View view){
 
-    public  void  irCompartilhamento (View v){
-
-        Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
-        sendIntent.setType("text/plain");
-        startActivity(sendIntent);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(Environment.getExternalStorageDirectory()+ "/" + intent)));
+        intent.setType("*/*");
+        startActivity(intent);
     }
-
     //--------------------------------------------------------------------------------------------------
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -92,8 +89,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
-
-
     //--------------------------------------------------------------------------------------------------
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -111,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_DISPLAY);
                 return true;
 
-
             case R.id.item2:
                 dataBundle = new Bundle();
                 dataBundle.putInt("id", 2);
@@ -126,9 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
     //--------------------------------------------------------------------------------------------------
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -139,13 +131,11 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_ADD_OK) {
                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Adicionada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
-
             }
 
             if (resultCode == RESULT_DEL_OK) {
                 Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayoutMain), "Atividade Deletada", Snackbar.LENGTH_SHORT);
                 snackbar.show();
-
             }
 
             if (resultCode == RESULT_EDT_OK) {
@@ -153,8 +143,6 @@ public class MainActivity extends AppCompatActivity {
                 snackbar.show();
             }
         }
-
-
     }
 
     public boolean onOptionsItemSelected2(MenuItem item) {
@@ -167,16 +155,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
-
-
         updateListView();
     }
-
-
     private void updateListView() {
         ArrayList<Atividade> arrayAtividade = db.getAllStudentContacts();
         AdapterAtividade adapterAtividade = new AdapterAtividade(this, arrayAtividade);
@@ -186,10 +169,6 @@ public class MainActivity extends AppCompatActivity {
         objListView.setAdapter(adapterAtividade);
     }
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
                 .setName("Main Page") // TODO: Define a title for the content shown.
@@ -206,8 +185,6 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.connect();
         AppIndex.AppIndexApi.start(client, getIndexApiAction());
     }
@@ -216,8 +193,6 @@ public class MainActivity extends AppCompatActivity {
     public void onStop() {
         super.onStop();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }

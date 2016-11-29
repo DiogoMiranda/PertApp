@@ -28,13 +28,12 @@ public class ContatoDialogFragment extends DialogFragment {
 
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_layout_contato, null);
         DocumentView dvText = (DocumentView) view.findViewById(R.id.dvTexto);
-        dvText.setText("Desenvolvedor, Diogo F. Miranda \n" +
+        dvText.setText("Desenvolvedor, Diogo Francisco Miranda \n" +
                        "" );
 
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())
                 .setView(view)
                 .setTitle("Contato")
-
 
                 .setNegativeButton("Compartilhar", new DialogInterface.OnClickListener(){
                     @Override

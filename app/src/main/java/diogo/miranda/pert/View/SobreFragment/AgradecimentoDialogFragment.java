@@ -27,7 +27,7 @@ public class AgradecimentoDialogFragment extends DialogFragment {
         DocumentView dvText = (DocumentView) view.findViewById(R.id.dvTexto);
 
         dvText.setText("Romante Ezer Rodrigues - Orientador. \n" +
-                       "Hugo T. Souza - Desenvolvimento. \n" +
+                       "Hugo Thomaz Souza - Desenvolvimento. \n" +
                        "Mateus Araujo - Design.");
 
 

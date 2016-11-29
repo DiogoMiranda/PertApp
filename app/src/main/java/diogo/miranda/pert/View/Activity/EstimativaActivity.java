@@ -110,16 +110,8 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ResultCalcDialog dialogResult = new ResultCalcDialog().newInstance(estimativas);
             dialogResult.show(ft, "dialogResult");
-
-
- }
-
+             }
     }
-
-
-
-
-
 
     @Override
     public void onStart() {

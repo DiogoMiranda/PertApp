@@ -18,8 +18,6 @@ import diogo.miranda.pert.R;
  */
 
 public class TecnicaPertDialogFragment extends DialogFragment {
-
-
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

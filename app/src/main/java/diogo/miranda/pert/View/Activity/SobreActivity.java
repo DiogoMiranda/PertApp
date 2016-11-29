@@ -34,7 +34,7 @@ public class SobreActivity extends AppCompatActivity {
                 "Contato",
                 "Técnica Pert",
                 "Agradecimentos",
-                "              Versão 1.11"
+                " Versão 1.11"
         };
 
 
