@@ -9,3 +9,5 @@ A técnica PERT tem por objetivo descobrir a duração de uma tarefa baseando-se
        PERT = (Pessimista + 4 x Mais provável + Otimista).
        Desvio Padrão: Pessimista – Otimista
        Variância: ((Pessimista – Otimista)) ²
+# Formula 
+https://github.com/DiogoMiranda/PertApp/blob/master/app/src/main/res/drawable/formula_pert.png
