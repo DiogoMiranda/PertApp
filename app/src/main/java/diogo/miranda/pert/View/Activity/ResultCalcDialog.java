@@ -23,6 +23,7 @@ import java.util.HashMap;
 
 public class ResultCalcDialog extends DialogFragment {
 
+
     public static ResultCalcDialog newInstance(HashMap<String, Long> estimativa) {
         ResultCalcDialog f = new ResultCalcDialog();
 
@@ -33,7 +34,6 @@ public class ResultCalcDialog extends DialogFragment {
 
         return f;
     }
-
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -52,8 +52,6 @@ public class ResultCalcDialog extends DialogFragment {
         dvText.setText("Duração mais provavel da atividade: " + calculoPert.getResultado() + " dias / horas. \n\n" +
                 "Desvio padrão da atividade:  " + calculoPert.getDesvioPadrao() + "\n\n" +
                 "Variância é de: " + calculoPert.getVariacia());
-
-
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())
                 .setView(view)
                 .setTitle("Resultado")

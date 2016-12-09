@@ -1,106 +1,98 @@
-<android.support.design.widget.CoordinatorLayout
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/myCoordinatorLayoutDisplayAtividade"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".View.Activity.MainActivity"
-    android:layout_marginTop="15dp">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".View.Activity.MainActivity">
 
         <EditText
             android:id="@+id/edt_DisplayAtividade_Titler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:inputType="text"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:hint="Nome da Atividade">
+            android:hint="Nome da Atividade"
+            android:inputType="text">
             <requestFocus />
         </EditText>
-
-    <Button
+        <Button
             android:id="@+id/btn_DisplayAtividade_Salvar"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/edt_DisplayAtividade_Status"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_marginBottom="28dp"
             android:onClick="saveData"
-            android:text="@string/save"
-            android:layout_alignParentRight="true"
+            android:text="@string/save" />
+
+        <EditText
+            android:id="@+id/edt_DisplayAtividade_Responsible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="#83c9e2"
-            android:textColor="#fcf9f9" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_DisplayAtividade_Description"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Responsável"
+            android:inputType="text"></EditText>
 
-    <EditText
-        android:id="@+id/edt_DisplayAtividade_Responsible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Responsável"
-        android:layout_below="@+id/edt_DisplayAtividade_Description"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        <EditText
+            android:id="@+id/edt_DisplayAtividade_QTD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_DisplayAtividade_Responsible"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Quant. de dias/horas"
+            android:inputType="phone|text" />
 
-
-    </EditText>
-
-    <EditText
-        android:id="@+id/edt_DisplayAtividade_QTD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone|text"
-        android:hint="Quant. de dias/horas"
-        android:layout_below="@+id/edt_DisplayAtividade_Responsible"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:id="@+id/edt_DisplayAtividade_Status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Status da Atividade"
-        android:layout_below="@+id/edt_DisplayAtividade_QTD"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:id="@+id/edt_DisplayAtividade_Description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Descrição da Atividade"
-        android:layout_below="@+id/edt_DisplayAtividade_Titler"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-</RelativeLayout>
+        <EditText
+            android:id="@+id/edt_DisplayAtividade_Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_DisplayAtividade_QTD"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Status da Atividade"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/edt_DisplayAtividade_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_DisplayAtividade_Titler"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Descrição da Atividade"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

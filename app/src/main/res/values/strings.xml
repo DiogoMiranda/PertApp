@@ -2,14 +2,24 @@
 <resources>
     <string name="app_name"> PertApp </string>
     <string name="title_activity_display_contact">Atividades</string>
+    <string name="title_activity_calculo_pert"> Calculo Pert</string>
     <string name="Add_New">Adicionar atividade</string>
     <string name="edit">Editar Atividade</string>
     <string name="delete">Deletar Atividade</string>
+    <string name="name">Atividade</string>
+    <string name="phone"> Dias </string>
+    <string name="email">Descrição </string>
+    <string name="street">Responsável</string>
+    <string name="country">Status Atividade </string>
     <string name="save">Salvar </string>
     <string name="deleteContact">Deseja realmente deletar essa atividade.</string>
     <string name="yes"> Sim </string>
     <string name="no"> Não </string>
+    <string name="lbl_value1">O - Estimativa Otimista</string>
+    <string name="lbl_value2">M - Estimativa Mais Provavel</string>
+    <string name="lbl_value3">P - Estimativa Pessimista</string>
     <string name="lbl_calcular"> Gerar Pert </string>
     <string name="Sobre">Sobre </string>
     <string name="calculoPert">Calculo de Pert</string>
+    <string name="estimativa_de_pert">Estimativa de Pert</string>
 </resources>

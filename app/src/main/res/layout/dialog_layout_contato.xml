@@ -1,30 +1,16 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="diogo.miranda.pert.View.SobreFragment.ContatoDialogFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/dvTexto"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    ext:documentView_textAlignment="justified"
-                    ext:documentView_textSize="15sp" />
-
-            </LinearLayout>
+        android:orientation="vertical"
+        android:padding="24dp">
+        <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/dvTexto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ext:documentView_textAlignment="justified"
+            ext:documentView_textSize="15sp" />
     </LinearLayout>
-
-</FrameLayout>
-
+</ScrollView>

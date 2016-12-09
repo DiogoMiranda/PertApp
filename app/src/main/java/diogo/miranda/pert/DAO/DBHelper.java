@@ -26,9 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_QTD = "qtd";
     public static final String COLUMN_STATUS = "status";
 
-
     private HashMap hp;
-
     public DBHelper(Context context)
     {
         super(context, DATABASE_NAME , null, 3);

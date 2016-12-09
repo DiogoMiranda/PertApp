@@ -24,7 +24,6 @@ public class AdapterAtividade extends BaseAdapter {
         this.ctx = ctx;
         this.arrayAtividades = arrayAtividades;
     }
-
     @Override
     public int getCount() {
         return arrayAtividades.size();
@@ -49,7 +48,6 @@ public class AdapterAtividade extends BaseAdapter {
         Atividade atividade = arrayAtividades.get(position);
         tv_id.setText(String.valueOf(atividade.getId()));
         tv_title.setText(atividade.getTitler());
-
         return view;
     }
 }

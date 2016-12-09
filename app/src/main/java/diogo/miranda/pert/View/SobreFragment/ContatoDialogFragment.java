@@ -35,6 +35,7 @@ public class ContatoDialogFragment extends DialogFragment {
                 .setView(view)
                 .setTitle("Contato")
 
+
                 .setNegativeButton("Compartilhar", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

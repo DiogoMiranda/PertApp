@@ -38,12 +38,11 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculo_pert);
+        //ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Log.i("", "EstimativaActivity");
@@ -59,19 +58,14 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
-
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         return true;
 
     }
-
-
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             // Id correspondente ao botão Up/Home da actionbar
@@ -81,7 +75,6 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public void onClick(View v) {
@@ -110,9 +103,9 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ResultCalcDialog dialogResult = new ResultCalcDialog().newInstance(estimativas);
             dialogResult.show(ft, "dialogResult");
-             }
-    }
+ }
 
+    }
     @Override
     public void onStart() {
         super.onStart();

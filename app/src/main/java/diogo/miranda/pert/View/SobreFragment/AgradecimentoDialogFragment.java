@@ -17,7 +17,6 @@ import diogo.miranda.pert.R;
 
 public class AgradecimentoDialogFragment extends DialogFragment {
 
-
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -27,9 +26,8 @@ public class AgradecimentoDialogFragment extends DialogFragment {
         DocumentView dvText = (DocumentView) view.findViewById(R.id.dvTexto);
 
         dvText.setText("Romante Ezer Rodrigues - Orientador. \n" +
-                       "Hugo Thomaz Souza - Desenvolvimento. \n" +
+                       "Hugo T. Souza - Desenvolvimento. \n" +
                        "Mateus Araujo - Design.");
-
 
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())
                 .setView(view)
@@ -40,7 +38,6 @@ public class AgradecimentoDialogFragment extends DialogFragment {
                         dismiss();
                     }
                 });
-
         return alert.show();
     }
 }

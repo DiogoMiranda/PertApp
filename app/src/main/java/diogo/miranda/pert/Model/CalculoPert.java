@@ -5,10 +5,12 @@ import java.io.Serializable;
 
 
 public class CalculoPert implements Serializable{
+
+
+
     private Long otimista;
     private Long provavel;
     private Long pessimista;
-
     private double resultado;
     private double desvioPadrao;
     private double variacia;
@@ -16,14 +18,12 @@ public class CalculoPert implements Serializable{
     public CalculoPert() {
 
     }
-
     public CalculoPert(Long otimista, Long provavel, Long pessimista) {
         this.otimista = otimista;
         this.provavel = provavel;
         this.pessimista = pessimista;
 
     }
-
     public Long getOtimista() {
         return otimista;
     }
@@ -87,6 +87,8 @@ public class CalculoPert implements Serializable{
         this.variacia = variacia;
     }
 
+
+
     public boolean calcula() throws Exception{
         if (otimista == null || provavel == null || pessimista == null) {
             throw new Exception("Os valores estão vazios ");
@@ -102,5 +104,4 @@ public class CalculoPert implements Serializable{
             return true;
         }
     }
-
 }
