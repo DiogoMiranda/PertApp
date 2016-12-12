@@ -6,8 +6,6 @@ import java.io.Serializable;
 
 public class CalculoPert implements Serializable{
 
-
-
     private Long otimista;
     private Long provavel;
     private Long pessimista;

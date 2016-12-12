@@ -12,7 +12,6 @@ public class Atividade {
     private Double qtd;
     private String status;
 
-
     public Integer getId() {
         return id;
     }
@@ -74,11 +73,8 @@ public class Atividade {
 
     }
 
-
     @Override
     public String toString() {
         return "Titler: " + this.titler + " - Description: " + this.description;
     }
-
-
 }
