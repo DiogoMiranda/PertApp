@@ -60,7 +60,6 @@ public class ResultCalcDialog extends DialogFragment {
                         dismiss();
                     }
                 });
-
         return alert.show();
     }
 }

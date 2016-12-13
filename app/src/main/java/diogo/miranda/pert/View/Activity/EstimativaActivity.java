@@ -52,7 +52,6 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
         btncalcular = (Button) findViewById(R.id.btncalcular);
         btncalcular.setOnClickListener(this);
 
-
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -80,7 +79,6 @@ public class EstimativaActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
 
         // Recortado para CalculoPert
-
         String v1 = edtvalor1.getText().toString();
         String v2 = edtvalor2.getText().toString();
         String v3 = edtvalor3.getText().toString();

@@ -2,8 +2,6 @@ package diogo.miranda.pert.Model;
 
 import java.io.Serializable;
 
-
-
 public class CalculoPert implements Serializable{
 
     private Long otimista;
@@ -84,8 +82,6 @@ public class CalculoPert implements Serializable{
     public void setVariacia(double variacia) {
         this.variacia = variacia;
     }
-
-
 
     public boolean calcula() throws Exception{
         if (otimista == null || provavel == null || pessimista == null) {

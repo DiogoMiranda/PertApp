@@ -55,9 +55,7 @@ public class MainActivity extends AppCompatActivity {
     public void irCalculoPert (View view){
             Intent intent = new Intent(getApplicationContext(), EstimativaActivity.class);
             startActivity(intent);
-
     }
-
     //--------------------------------------------------------------------------------------------------
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -133,8 +131,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-
         updateListView();
     }
     private void updateListView(){
