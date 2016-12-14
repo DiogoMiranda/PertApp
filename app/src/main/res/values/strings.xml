@@ -16,7 +16,7 @@
     <string name="yes"> Sim </string>
     <string name="no"> Não </string>
     <string name="lbl_value1">O - Estimativa Otimista</string>
-    <string name="lbl_value2">M - Estimativa Mais Provavel</string>
+    <string name="lbl_value2">M - Estimativa Mais Provável</string>
     <string name="lbl_value3">P - Estimativa Pessimista</string>
     <string name="lbl_calcular"> Gerar Pert </string>
     <string name="Sobre">Sobre </string>

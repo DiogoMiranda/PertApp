@@ -32,35 +32,6 @@
         android:layout_alignParentRight="true"
         android:maxLength="7"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/edtvalor2"
-        android:hint="M - Estimativa mais Provavel"
-        android:layout_below="@+id/edtvalor1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:maxLength="7"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/edtvalor3"
-        android:hint="P - Estimativa Pessimista"
-        android:layout_weight="0.14"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/edtvalor2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:maxLength="7"/>
-
     <Button
         style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_width="191dp"
@@ -70,6 +41,35 @@
         android:layout_gravity="center_horizontal"
         android:onClick="enviarPert"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtvalor3"
+        android:hint="P - Estimativa Pessimista"
+        android:layout_weight="0.14"
+        android:maxLength="7"
+        android:layout_below="@+id/edtvalor2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtvalor2"
+        android:hint="M - Estimativa mais Provável"
+        android:maxLength="7"
+        android:layout_below="@+id/edtvalor1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"

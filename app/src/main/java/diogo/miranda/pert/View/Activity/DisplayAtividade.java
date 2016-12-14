@@ -86,11 +86,15 @@ public class DisplayAtividade extends AppCompatActivity {
                 tv_status.setClickable(false);
 
             }
+
         }
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -108,7 +112,8 @@ public class DisplayAtividade extends AppCompatActivity {
         return true;
     }
 
-    @Override
+
+     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long

@@ -48,7 +48,7 @@ public class ResultCalcDialog extends DialogFragment {
         calculoPert.setProvavel(estimativas.get("provavel"));
         calculoPert.setPessimista(estimativas.get("pessimista"));
 
-        dvText.setText("Duração Mais Provável da Atividade: " + calculoPert.getResultado() + " dias / horas. \n\n" +
+        dvText.setText("Estimativa da Atividade: " + calculoPert.getResultado() + " dias / horas. \n\n" +
                 "Desvio Padrão:  " + calculoPert.getDesvioPadrao() + "\n\n" +
                 "Variância: " + calculoPert.getVariacia());
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())

@@ -31,9 +31,9 @@ public class TecnicaPertDialogFragment extends DialogFragment {
 
 
         dvTecnicaTexto1.setText("A técnica PERT busca descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP). .\n" +
-                ". Otimista = É o cenário perfeito, onde tudo dá certo.\n" +
-                ". Pessimista = É o pior cenário, onde tudo vai dar errado.\n" +
-                ". Mais Provável = É um cenário razoável, onde tudo ficará dentro da normalidade, sem grandes surpresas (nem boas nem ruins).\n\n" +
+                ". Otimista, é o cenário perfeito, onde tudo dá certo.\n" +
+                ". Pessimista, é o pior cenário, onde tudo vai dar errado.\n" +
+                ". Mais Provável, é um cenário razoável, onde tudo ficará dentro da normalidade, sem grandes surpresas (nem boas nem ruins).\n\n" +
                 "Fórmula do cálculo PERT:\n");
 
         dvTecnicaTexto2.setText("Esta fórmula aplica um peso maior para a estimativa Mais Provável, mas não deixa de considerar as estimativas Pessimista e Otimista. .\n" +
