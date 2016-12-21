@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.appindexing.Action;
@@ -22,6 +23,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import diogo.miranda.pert.DAO.DBHelper;
 import diogo.miranda.pert.Model.Atividade;
 import diogo.miranda.pert.R;
+
+import static android.R.attr.id;
+import static diogo.miranda.pert.R.id.edt_DisplayAtividade_QTD;
 
 public class DisplayAtividade extends AppCompatActivity {
 
@@ -49,7 +53,7 @@ public class DisplayAtividade extends AppCompatActivity {
         tv_titler = (TextView) findViewById(R.id.edt_DisplayAtividade_Titler);
         tv_responsible = (TextView) findViewById(R.id.edt_DisplayAtividade_Responsible);
         tv_description = (TextView) findViewById(R.id.edt_DisplayAtividade_Description);
-        tv_qtd = (TextView) findViewById(R.id.edt_DisplayAtividade_QTD);
+        tv_qtd = (TextView) findViewById(edt_DisplayAtividade_QTD);
         tv_status = (TextView) findViewById(R.id.edt_DisplayAtividade_Status);
 
         mydb = new DBHelper(this);
@@ -93,9 +97,6 @@ public class DisplayAtividade extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -112,8 +113,7 @@ public class DisplayAtividade extends AppCompatActivity {
         return true;
     }
 
-
-     @Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -194,6 +194,7 @@ public class DisplayAtividade extends AppCompatActivity {
                     }
                     finish();
                 }
+
             }
         }
 

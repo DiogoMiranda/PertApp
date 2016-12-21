@@ -53,7 +53,7 @@ public class ResultCalcDialog extends DialogFragment {
                 "Variância: " + calculoPert.getVariacia());
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())
                 .setView(view)
-                .setTitle("Estimativa de Pert")
+                .setTitle("Estimativa de PERT")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
