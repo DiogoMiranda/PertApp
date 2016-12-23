@@ -4,11 +4,6 @@
     android:layout_height="match_parent"
     tools:context="diogo.miranda.pert.View.SobreFragment.ContatoDialogFragment">
 
-    <ListView
-        android:id="@+id/list_last_posts"
-        android:layout_width="match_parent"
-        android:layout_height="340dp"
-        android:layout_gravity="center"></ListView>
     <ImageView
         android:id="@+id/imageView"
         android:contentDescription="1"
@@ -50,5 +45,11 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="right|top"
         android:layout_margin="30dp" />
+
+    <ListView
+        android:id="@+id/list_last_posts"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_gravity="center"></ListView>
 
 </FrameLayout>
