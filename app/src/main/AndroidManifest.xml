@@ -24,7 +24,8 @@
         <activity
             android:name=".View.Activity.DisplayAtividade"
             android:label="@string/title_activity_display_contact"
-            android:parentActivityName=".View.Activity.MainActivity">
+            android:parentActivityName=".View.Activity.MainActivity"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
