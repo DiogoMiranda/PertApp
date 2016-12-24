@@ -64,10 +64,9 @@ public class Atividade {
     public boolean equals(Object o) {
         Atividade atividade = (Atividade) o;
 
-        if(atividade.getId().equals(this.getId())){
+        if (atividade.getId().equals(this.getId())) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
 

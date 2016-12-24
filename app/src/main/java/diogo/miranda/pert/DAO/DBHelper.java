@@ -8,10 +8,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import diogo.miranda.pert.Model.Atividade;
-
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import diogo.miranda.pert.Model.Atividade;
 
 /**
  * Created by Diogo on 30/04/2016.
@@ -27,9 +27,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_STATUS = "status";
 
     private HashMap hp;
-    public DBHelper(Context context)
-    {
-        super(context, DATABASE_NAME , null, 3);
+
+    public DBHelper(Context context) {
+        super(context, DATABASE_NAME, null, 3);
     }
 
     @Override
@@ -37,10 +37,10 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(
                 "create table " + TABLE_NAME +
                         "(" + COLUMN_ID + " integer primary key autoincrement, " +
-                        COLUMN_TITLER + " text, "+
-                        COLUMN_RESPONSIBLE + " text, "+
-                        COLUMN_DESCRIPTION + " text, "+
-                        COLUMN_QTD + " text, "+
+                        COLUMN_TITLER + " text, " +
+                        COLUMN_RESPONSIBLE + " text, " +
+                        COLUMN_DESCRIPTION + " text, " +
+                        COLUMN_QTD + " text, " +
                         COLUMN_STATUS + " text)"
         );
     }
@@ -53,15 +53,15 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //----------------------------------------------------------------------------------------------
-    public Integer addStudentContact(String titler, String description, String responsible, Double qtd, String status){
-        SQLiteDatabase db=this.getWritableDatabase();
+    public Integer addStudentContact(String titler, String description, String responsible, Double qtd, String status) {
+        SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues contantValues = new ContentValues();
-        contantValues.put(COLUMN_TITLER,titler);
-        contantValues.put(COLUMN_DESCRIPTION,description);
+        contantValues.put(COLUMN_TITLER, titler);
+        contantValues.put(COLUMN_DESCRIPTION, description);
         contantValues.put(COLUMN_RESPONSIBLE, responsible);
         contantValues.put(COLUMN_QTD, qtd);
-        contantValues.put(COLUMN_STATUS,status);
+        contantValues.put(COLUMN_STATUS, status);
 
         Integer res = (int) db.insert(TABLE_NAME, null, contantValues);
         db.close();
@@ -71,15 +71,15 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //----------------------------------------------------------------------------------------------
-    public boolean updateStudentContact(Integer id, String titler, String description, String responsible, Double qtd, String status){
-        SQLiteDatabase db=this.getWritableDatabase();
+    public boolean updateStudentContact(Integer id, String titler, String description, String responsible, Double qtd, String status) {
+        SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues contantValues = new ContentValues();
-        contantValues.put(COLUMN_TITLER,titler);
-        contantValues.put(COLUMN_DESCRIPTION,description);
+        contantValues.put(COLUMN_TITLER, titler);
+        contantValues.put(COLUMN_DESCRIPTION, description);
         contantValues.put(COLUMN_RESPONSIBLE, responsible);
         contantValues.put(COLUMN_QTD, qtd);
-        contantValues.put(COLUMN_STATUS,status);
+        contantValues.put(COLUMN_STATUS, status);
 
         db.update(TABLE_NAME, contantValues, "id = ?", new String[]{Integer.toString(id)});
         db.close();
@@ -88,18 +88,18 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //----------------------------------------------------------------------------------------------
-    public Integer deleteContact(Integer id){
-        SQLiteDatabase db=this.getWritableDatabase();
-        int res = db.delete(TABLE_NAME," id = ?",new String[]{Integer.toString(id)});
+    public Integer deleteContact(Integer id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int res = db.delete(TABLE_NAME, " id = ?", new String[]{Integer.toString(id)});
         db.close();
         Log.i("", "DAO - Delete");
         return res;
     }
 
     //----------------------------------------------------------------------------------------------
-    public Cursor getData(int contactid){
-        SQLiteDatabase db=this.getWritableDatabase();
-        Cursor res=db.rawQuery("Select * from " + TABLE_NAME + " where " + COLUMN_ID + " = " + contactid, null);
+    public Cursor getData(int contactid) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("Select * from " + TABLE_NAME + " where " + COLUMN_ID + " = " + contactid, null);
         db.close();
 
         return res;
@@ -107,14 +107,14 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //----------------------------------------------------------------------------------------------
     //TODO: Criei este método getAtividadeByID para retornar ja um objeto Atividade e não um cursor como no método GetData.
-    public Atividade getAtividadeByID(Integer contactid){
+    public Atividade getAtividadeByID(Integer contactid) {
 
-        SQLiteDatabase db=this.getWritableDatabase();
-        Cursor cursor=db.rawQuery("Select * from " + TABLE_NAME + " where " + COLUMN_ID + " = " + contactid, null);
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from " + TABLE_NAME + " where " + COLUMN_ID + " = " + contactid, null);
 
         Atividade atividade = new Atividade();
 
-        if (cursor.moveToFirst()){
+        if (cursor.moveToFirst()) {
             atividade.setId(cursor.getInt(cursor.getColumnIndex(COLUMN_ID)));
             atividade.setTitler(cursor.getString(cursor.getColumnIndex(COLUMN_TITLER)));
             atividade.setDescription(cursor.getString(cursor.getColumnIndex(COLUMN_DESCRIPTION)));
@@ -126,23 +126,22 @@ public class DBHelper extends SQLiteOpenHelper {
             db.close();
 
             return atividade;
-        }
-        else{
+        } else {
             return null;
         }
     }
 
     //----------------------------------------------------------------------------------------------
-    public int numberOfRows(){
-        SQLiteDatabase db=this.getWritableDatabase();
-        int numRows=(int) DatabaseUtils.queryNumEntries(db, TABLE_NAME);
+    public int numberOfRows() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int numRows = (int) DatabaseUtils.queryNumEntries(db, TABLE_NAME);
         db.close();
 
         return numRows;
     }
 
     //----------------------------------------------------------------------------------------------
-    public ArrayList<Atividade> getAllStudentContacts(){
+    public ArrayList<Atividade> getAllStudentContacts() {
         ArrayList<Atividade> arrayAtividade = new ArrayList<Atividade>();
 
         SQLiteDatabase db = this.getReadableDatabase();

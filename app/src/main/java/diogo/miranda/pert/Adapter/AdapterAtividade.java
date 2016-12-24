@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import diogo.miranda.pert.Model.Atividade;
 import diogo.miranda.pert.R;
-
-import java.util.ArrayList;
 
 /**
  * Created by Diogo Miranda on 17/09/2016.
@@ -20,10 +20,11 @@ public class AdapterAtividade extends BaseAdapter {
     private Context ctx;
     private ArrayList<Atividade> arrayAtividades;
 
-    public AdapterAtividade(Context ctx, ArrayList<Atividade> arrayAtividades){
+    public AdapterAtividade(Context ctx, ArrayList<Atividade> arrayAtividades) {
         this.ctx = ctx;
         this.arrayAtividades = arrayAtividades;
     }
+
     @Override
     public int getCount() {
         return arrayAtividades.size();

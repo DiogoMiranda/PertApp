@@ -1,30 +1,26 @@
 package diogo.miranda.pert.View.Activity;
 
-import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+
 import diogo.miranda.pert.DAO.DBHelper;
 import diogo.miranda.pert.Model.Atividade;
 import diogo.miranda.pert.R;
 
-import static android.R.attr.id;
 import static diogo.miranda.pert.R.id.edt_DisplayAtividade_QTD;
 
 public class DisplayAtividade extends AppCompatActivity {
@@ -47,8 +43,6 @@ public class DisplayAtividade extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_atividade);
-
-        Log.i("", "DisplayActivity");
 
         tv_titler = (TextView) findViewById(R.id.edt_DisplayAtividade_Titler);
         tv_responsible = (TextView) findViewById(R.id.edt_DisplayAtividade_Responsible);
@@ -175,28 +169,28 @@ public class DisplayAtividade extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
 
-            if (extras != null) {
-                int Value = extras.getInt("id");
-                if (Value > 0) {
-                    if (mydb.updateStudentContact(id_To_Update, tv_titler.getText().toString(), tv_description.getText().toString(), tv_responsible.getText().toString(), Double.parseDouble(tv_qtd.getText().toString()), tv_status.getText().toString())) {
-                        setResult(MainActivity.RESULT_EDT_OK);
-                        finish();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Sem atualização", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-
-                    if (mydb.addStudentContact(tv_titler.getText().toString(), tv_description.getText().toString(), tv_responsible.getText().toString(), Double.parseDouble(tv_qtd.getText().toString()), tv_status.getText().toString()) != -1) {
-                        setResult(MainActivity.RESULT_ADD_OK);
-                        finish();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Não adicionado", Toast.LENGTH_SHORT).show();
-                    }
+        if (extras != null) {
+            int Value = extras.getInt("id");
+            if (Value > 0) {
+                if (mydb.updateStudentContact(id_To_Update, tv_titler.getText().toString(), tv_description.getText().toString(), tv_responsible.getText().toString(), Double.parseDouble(tv_qtd.getText().toString()), tv_status.getText().toString())) {
+                    setResult(MainActivity.RESULT_EDT_OK);
                     finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Sem atualização", Toast.LENGTH_SHORT).show();
                 }
+            } else {
 
+                if (mydb.addStudentContact(tv_titler.getText().toString(), tv_description.getText().toString(), tv_responsible.getText().toString(), Double.parseDouble(tv_qtd.getText().toString()), tv_status.getText().toString()) != -1) {
+                    setResult(MainActivity.RESULT_ADD_OK);
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Não adicionado", Toast.LENGTH_SHORT).show();
+                }
+                finish();
             }
+
         }
+    }
 
 
     /**
@@ -234,4 +228,5 @@ public class DisplayAtividade extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }
+
 }
