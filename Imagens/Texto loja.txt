@@ -1,0 +1,14 @@
+Setor: Produtividade
+
+PertApp:  Um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT.
+
+  A técnica PERT tem por objetivo descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP).
+
+- Otimista, é o cenário perfeito, onde tudo dá certo. 
+- Pessimista, é o pior cenário, onde tudo vai dar errado. 
+- Mais Provável, é um cenário razoável, onde tudo ficará dentro da normalidade, sem grandes surpresas (nem boas nem ruins). 
+- E ainda, realiza o cadastro e nanutenção de atividades ou tarefas do projeto.
+
+- Fórmula do cálculo: PERT = (Pessimista + 4 x Mais provável + Otimista). 
+- Desvio Padrão: Pessimista – Otimista.
+- Variância: (Pessimista – Otimista) ².
