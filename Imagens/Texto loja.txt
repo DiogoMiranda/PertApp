@@ -12,3 +12,10 @@ PertApp:  Um gerenciador de atividades em projetos, o qual realiza o calculo da 
 - Fórmula do cálculo: PERT = (Pessimista + 4 x Mais provável + Otimista). 
 - Desvio Padrão: Pessimista – Otimista.
 - Variância: (Pessimista – Otimista) ².
+
+
+
+Tela 1 -> Rápido. Simples. Prático.
+Tela 2 -> Entre com os informações. Otimista. Mais Provável. Pessimista. 
+Tela 3 -> Pronto. Encontrou a estimativa ideal para a atividade!
+Tela 4 -> Acompanhe as atividades cadastradas
