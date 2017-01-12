@@ -26,7 +26,7 @@ public class NotaVersaoDialogFragment extends DialogFragment {
         DocumentView dvText = (DocumentView) view.findViewById(R.id.dvTexto);
 
         dvText.setText("PertApp, um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT \n" +
-                "\nVersão 1.0");
+                "\nVersão 1.11");
 
         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity())
                 .setView(view)
