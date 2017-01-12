@@ -1,6 +1,6 @@
 ![graphic1](https://cloud.githubusercontent.com/assets/13684104/21874771/40c8fa3c-d85e-11e6-9785-07eac81476ea.png)
 ### PertApp, um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT.
-[https://play.google.com/store/apps/details?id=diogo.miranda.pert](url)
+[](https://play.google.com/store/apps/details?id=diogo.miranda.pert)
 
   A técnica PERT tem por objetivo descobrir a duração de uma tarefa baseando-se em três estimativas possíveis para uma determinada atividade: estimativa Otimista (O), Pessimista (P), e mais Provável (MP). 
        Otimista = É o cenário perfeito, onde tudo dá certo.
