@@ -1,4 +1,3 @@
-# PertApp
 ![graphic1](https://cloud.githubusercontent.com/assets/13684104/21874771/40c8fa3c-d85e-11e6-9785-07eac81476ea.png)
 ### PertApp, um gerenciador de atividades em projetos, o qual realiza o calculo da técnica PERT.
 [https://play.google.com/store/apps/details?id=diogo.miranda.pert](url)
