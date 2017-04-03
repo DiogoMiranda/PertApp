@@ -21,156 +21,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.6.1_414b7fdeb878fe036b5f963a99752003844e297c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.6.1_d6d890f1ec4c75f857adc86b6b88a01fa11ed267.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_7535fdad0dbd0dbed2b6f92586e94750852e9003.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.github.bluejamesbond\textjustify-android\2.1.6\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="a298f4b67b4898200c47cfd4f5bf2f221c657766">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.github.bluejamesbond-textjustify-android-2.1.6_7b81cbfd68f14c8ddfa8a94fadd368e5d417df63.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_0e2ff88781d69f81f0801ff260f23f424fd71510.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-9.6.1_129835c410f1262d5b7aec4768a31229ce2587b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.6.1_174639ba8f411f29cda03b67a63169fd69e62f15.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\deise\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_c9b4ff60e025611cba86747621f24f107461b74e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.6.1_8f9d513f7b1bef1d5e842d808de9d8ceb3097ca2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_75a847136e6e567e8292e4245aee8fc20ec544bd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_298644f178151206e39cecdb61e692214bc1d07a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="22.0.1"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_f84aa9d853af1d8dc6a7b5b058feb5930b033e6a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_03dd764968d4d7da001543f13a70137c3c7518fc.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="22.0.1"
         sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
         <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_298644f178151206e39cecdb61e692214bc1d07a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_0bd4ac4a6bdf7d8ccb23c31464baf7b1dd87ca64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.6.1_0a0141a6ef487d9be8afa449d854c3cf205d3311.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_0e2ff88781d69f81f0801ff260f23f424fd71510.jar" />
     </item>
     <item
         is-multidex="false"
@@ -201,12 +57,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.github.bluejamesbond\textjustify-android\2.1.6\jars\classes.jar"
-        jumboMode="true"
+        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="22.0.1"
-        sha1="a298f4b67b4898200c47cfd4f5bf2f221c657766">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.github.bluejamesbond-textjustify-android-2.1.6_7b81cbfd68f14c8ddfa8a94fadd368e5d417df63.jar" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_7535fdad0dbd0dbed2b6f92586e94750852e9003.jar" />
     </item>
     <item
         is-multidex="false"
@@ -228,21 +84,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
+        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.github.bluejamesbond\textjustify-android\2.1.6\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="22.0.1"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_7535fdad0dbd0dbed2b6f92586e94750852e9003.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_35869015b5e992e6d5f83e3cad7e3be6d4b9ff0d.jar" />
+        sha1="a298f4b67b4898200c47cfd4f5bf2f221c657766">
+        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.github.bluejamesbond-textjustify-android-2.1.6_7b81cbfd68f14c8ddfa8a94fadd368e5d417df63.jar" />
     </item>
     <item
         is-multidex="false"
@@ -255,39 +102,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="22.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_5e0880f2b9fdae9a1c6c6fb2ac8879411000e4a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\deise\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_c9b4ff60e025611cba86747621f24f107461b74e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_d2d7a7c2da57dfc75afe18f6a840d4c6fedc2cdd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_cbef27b3b9ffc550709bb4005e18d98ba6aa0358.jar" />
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_0e2ff88781d69f81f0801ff260f23f424fd71510.jar" />
     </item>
     <item
         is-multidex="false"
@@ -297,6 +117,15 @@
         revision="22.0.1"
         sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
         <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.6.1_d6d890f1ec4c75f857adc86b6b88a01fa11ed267.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\deise\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_c9b4ff60e025611cba86747621f24f107461b74e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -318,21 +147,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.1"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_f84aa9d853af1d8dc6a7b5b058feb5930b033e6a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="22.0.1"
         sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
         <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.6.1_8f9d513f7b1bef1d5e842d808de9d8ceb3097ca2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_f84aa9d853af1d8dc6a7b5b058feb5930b033e6a.jar" />
     </item>
     <item
         is-multidex="false"
