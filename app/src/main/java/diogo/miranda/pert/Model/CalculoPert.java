@@ -88,12 +88,12 @@ public class CalculoPert implements Serializable{
             throw new Exception("Os valores estão vazios ");
 
         } else {
-            Long o = otimista;
-            Long m = provavel;
-            Long p = pessimista;
-            resultado = (o + (4 * m) + p) / 6;
-            desvioPadrao = (p - o) / 6;
-            variacia = ((p - o) / 6) ^ 2;
+            Long valor_otimista = otimista;
+            Long valor_provavel = provavel;
+            Long valor_pessimista = pessimista;
+            resultado = (valor_otimista + (4 * valor_provavel) + valor_pessimista) / 6;
+            desvioPadrao = (valor_pessimista - valor_otimista) / 6;
+            variacia = ((valor_pessimista - valor_otimista) / 6) ^ 2;
             return true;
         }
     }
