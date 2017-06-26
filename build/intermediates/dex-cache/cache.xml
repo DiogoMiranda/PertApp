@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="959c6b96f2b222f1cf59238de3e0b0f3d64e45a0">
+        sha1="abe16682526ad2472910ac1ee918d1e63ddf40d9">
         <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_185927f3fc7f230d3f49e79f59a7a00a1178627d.jar" />
     </item>
     <item
@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="ae7986d16d957dfdf9f7d44cc3a54bd12f6662bc">
+        sha1="fe231ee6b3418cb0171dc3d121d8a82a09fed087">
         <dex dex="D:\PertAppAtualizado\PertApp\PertApp\app\build\intermediates\pre-dexed\debug\instant-run_ce3d3af4037fc3b960657172dd2f4db783e773e1.jar" />
     </item>
     <item

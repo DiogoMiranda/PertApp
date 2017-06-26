@@ -20,6 +20,7 @@ public class CalculoPert implements Serializable{
         this.pessimista = pessimista;
 
     }
+
     public Long getOtimista() {
         return otimista;
     }

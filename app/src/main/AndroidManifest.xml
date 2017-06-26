@@ -39,7 +39,7 @@
             android:label="@string/Sobre"
             android:parentActivityName=".View.Activity.MainActivity"
             android:screenOrientation="portrait">
-
+            testBuildType "preproduction"
         </activity>
     </application>
 
